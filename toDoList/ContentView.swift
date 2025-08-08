@@ -38,11 +38,12 @@ struct ContentView: View {
             }//end List
         }//end VStack
         if showNewTask {
-            NewToDoView()
+            NewToDoView(toDoItem: ToDoItem(title: "", isImportant: false))
         }//end if
     }//end body
 }//end struck
 
 #Preview {
     ContentView()
+        .modelContainer(for: ToDoItem.self, inMemory: true)
 }
