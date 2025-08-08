@@ -43,5 +43,5 @@ struct NewToDoView: View {
 }// end struck`
 
 #Preview {
-    NewToDoView(toDoItem: ToDoItem(title: "",isImportant: false))
+    NewToDoView(showNewTask: .constant(false), toDoItem: ToDoItem(title: "",isImportant: false))
 }
